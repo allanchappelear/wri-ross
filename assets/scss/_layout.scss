@@ -1,0 +1,159 @@
+.head {
+	height: 80vh;
+	background: darken($blue, 35%);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	.logo {
+		width: 200px;
+		margin-top: 0;
+		z-index: 2;
+		position: relative;
+		border-radius: 0;
+	}
+	.tagline {
+		color: white;
+		font-size: 4em;
+		text-align: left;
+		width: 75%;
+		margin-top: 15vh;
+		font-weight: 900;
+		z-index: 2;
+		position: relative;
+	}
+}
+nav {
+	margin-top: 80vh;
+	font-family: $acumin-condensed;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: 100;
+	border-bottom: 1px solid transparentize(black, .9);
+	.navbar-brand {
+		padding: 0;
+		border-radius: 0;
+	}
+	a {
+		font-weight: 300;
+		text-decoration: none;
+	}
+}
+.city {
+	width: 100%;
+	height: 80vh;
+	background: url(../img/smog-city.jpg);
+	background-size: cover;
+	position: absolute;
+	z-index: 1;
+}
+.process {
+	.step {
+		border-top: 2px solid #fff;
+		position: relative;
+		h3 {
+			font-weight: 700;
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+		.date {
+			font-size: .8em;
+
+		}
+
+		&:before {
+			width: 18px;
+			height: 18px;
+			border-radius: 18px;
+			background: #fff;
+			top: -9px;
+			right: 50%;
+			content: '';
+			position: absolute;
+		}
+	}
+	.current {
+			background: rgba(255,255,255,.5);
+			border-top-color: $blue;
+			color: $blue;
+			h3, p {
+				color: 
+				$blue;
+			}
+			&:before {
+			
+			background: $blue;
+			
+		}
+		}
+}
+.big-changes {
+	margin-top: 9em;
+}
+
+
+.tile {
+	@include gradient;
+	padding: 5em;
+	h4 {
+		font-size: 3em;
+		color: white;
+	}
+	p {
+		color: white;
+		.location {
+			margin-top: 1em;
+		}
+	}
+	&.featured {
+		font-size: 1.5em;
+	}
+}
+
+.jury {
+	.item {
+		position: relative;
+		border-radius: 25px;
+		overflow: hidden;
+		width: 19.8%;
+		height: 200px;
+		margin: 0 1px 2px 0;
+		img {
+			position: relative;
+			width: 100%;
+			height: auto;
+		}
+		.caption {
+			border-radius: 25px;
+			padding: 1.5em;
+			position: absolute;
+			color: white;
+			background: $blue;
+			top: 137px;
+			opacity: .9;
+			height: 217px;
+			width: 75%;
+			transition: all .3s ease-in-out;
+			@include gradient;
+			h5 {
+				font-weight: 900;
+				font-family: $acumin-condensed;
+				font-size: 1.15em;
+				line-height: 1.2em;
+				margin-bottom: 1em;
+			}
+		}
+		&:hover {
+			.caption {
+				bottom: 0;
+				top: 0;
+								width: 100%;
+
+			}
+		}
+	}
+}

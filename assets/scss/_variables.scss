@@ -1,0 +1,29 @@
+@import url("https://use.typekit.net/adz0wpi.css");
+
+$acumin: acumin-pro, sans-serif;
+$acumin-condensed: acumin-pro-condensed, sans-serif;
+
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// Variables
+
+$green: #a1ba42;
+$blue: #0099cc;
+
+
+
+@mixin gradient {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+background: #a1ba42; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #a1ba42 0%, #0099cc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #a1ba42 0%,#0099cc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #a1ba42 0%,#0099cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+

@@ -1,0 +1,66 @@
+.bcg {
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    #slide01 & {
+        background: url(../img/homeHead1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+.slide {
+    .wrapper {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.slideInUp {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+}
+.is-active .slideInUp {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+#slide01 {
+  
+}
+
+.about {
+    overflow: hidden;
+    position: relative;
+}
+.clouds {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/hanoi-1.jpg) no-repeat center -145% #fff;
+    background-size: cover;
+}
+.clouds2 {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/cloud1.png) no-repeat top center;
+    background-size: cover;
+    opacity: .3;
+}
+.clouds3 {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/cloud2.png) no-repeat bottom center;
+    background-size: 50%;
+    opacity: .3;
+}

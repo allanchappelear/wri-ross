@@ -1,0 +1,10 @@
+// Bootstrap overrides variables
+
+.btn-primary {
+	border: 2px solid $blue;
+	background: none;
+	color: $blue;
+	text-transform: uppercase;
+	border-radius: 0;
+	font-weight: 900;
+}
