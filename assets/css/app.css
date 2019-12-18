@@ -10563,6 +10563,15 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 900;
 }
 
+.btn-primary:hover {
+  background: #0099cc;
+  border: 2px solid #0099cc;
+}
+
+.btn-primary.apply {
+  font-size: 1em;
+}
+
 body {
   font-family: acumin-pro, sans-serif;
 }
@@ -10669,11 +10678,18 @@ blockquote {
   margin-top: -65px;
 }
 
+body {
+  font-size: 18px;
+}
+
+body.navbar-pad {
+  padding-top: 86px;
+}
+
 .head {
   height: 80vh;
   background: #00131a;
   overflow: hidden;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -10699,12 +10715,13 @@ blockquote {
 }
 
 nav {
-  margin-top: 80vh;
   font-family: acumin-pro-condensed, sans-serif;
   font-size: 1.3em;
   text-decoration: none;
   font-weight: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100000;
 }
 
 nav .navbar-brand {
@@ -10727,17 +10744,18 @@ nav a {
 }
 
 .process .step {
-  border-top: 2px solid #fff;
+  border-top: 2px solid black;
   position: relative;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .process .step h3 {
   font-weight: 700;
-  color: #fff;
+  color: black;
 }
 
 .process .step p {
-  color: #fff;
+  color: black;
 }
 
 .process .step .date {
@@ -10748,7 +10766,7 @@ nav a {
   width: 18px;
   height: 18px;
   border-radius: 18px;
-  background: #fff;
+  background: black;
   top: -9px;
   right: 50%;
   content: '';
@@ -10756,13 +10774,17 @@ nav a {
 }
 
 .process .current {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border-top-color: #0099cc;
   color: #0099cc;
 }
 
-.process .current h3, .process .current p {
+.process .current h3 {
   color: #0099cc;
+}
+
+.process .current p {
+  color: black;
 }
 
 .process .current:before {
@@ -10803,6 +10825,11 @@ nav a {
   font-size: 1.5em;
 }
 
+.jury {
+  background: url(../img/angle-bg.jpg) top no-repeat;
+  background-size: cover;
+}
+
 .jury .item {
   position: relative;
   border-radius: 25px;
@@ -10830,6 +10857,7 @@ nav a {
   width: 75%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  font-size: .9em;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
   background: #a1ba42;
   /* Old browsers */
@@ -10853,6 +10881,531 @@ nav a {
   bottom: 0;
   top: 0;
   width: 100%;
+}
+
+#advisory_council {
+  background: url(../img/angle-bg2.jpg) bottom no-repeat;
+  background-size: cover;
+}
+
+#advisory_council .img-more {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 19.8%;
+  height: 200px;
+  margin: 0 1px 2px 0;
+}
+
+#advisory_council .img-more img {
+  width: 100%;
+  height: auto;
+}
+
+#advisory_council .img-more .title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  font-family: acumin-pro-condensed, sans-serif;
+  margin-bottom: 1em;
+}
+
+#advisory_council .img-more .hover {
+  border-radius: 25px;
+  padding: 1.5em;
+  position: absolute;
+  color: white;
+  background: #0099cc;
+  top: 137px;
+  opacity: .9;
+  height: 217px;
+  width: 75%;
+  font-size: .8em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+  background: #a1ba42;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+#advisory_council .img-more:hover .hover {
+  bottom: 0;
+  top: 0;
+  width: 100%;
+}
+
+#faq {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+  background: #a1ba42;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: white;
+  padding: 3em 0 0 0;
+  margin-top: 3em;
+}
+
+.faq {
+  height: 400px;
+}
+
+.faq .container {
+  width: 500px;
+}
+
+.faq .title {
+  font-size: 150px;
+  letter-spacing: 0;
+}
+
+.faq ul {
+  margin: 30px 0 0 40px;
+}
+
+.faq p {
+  width: 370px;
+  top: 145px;
+}
+
+.faq .container {
+  width: 300px;
+}
+
+.faq .title {
+  font-size: 100px;
+  letter-spacing: 0;
+}
+
+.faq ul {
+  margin-left: 17px;
+}
+
+.faq li {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.faq li a {
+  font-size: 14px;
+  height: 13px;
+}
+
+.faq .title {
+  font-size: 80px;
+  letter-spacing: 0;
+  top: -5px;
+  left: 0;
+}
+
+.faq p {
+  width: 300px;
+  top: 105px;
+  left: 0;
+  font-size: 14px;
+}
+
+.faq .more {
+  bottom: 175px;
+}
+
+.faq {
+  height: 450px;
+}
+
+.faq .container {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.faq h2 {
+  font-size: 325px;
+  color: #fff;
+  position: relative;
+  top: -166px;
+  left: -39px;
+  letter-spacing: 15px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.faq ul {
+  float: left;
+  margin: 60px 0 0 180px;
+}
+
+.faq li {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+.faq li:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.faq li a {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: underline;
+  display: block;
+  height: 15px;
+}
+
+.faq li a span {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: block;
+}
+
+.faq li a span:before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.faq li a:hover span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.faq p {
+  position: absolute;
+  top: 285px;
+  left: 45px;
+  font-size: 19px;
+  color: #fff;
+  width: 485px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.faq .more {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.faq .more .span {
+  display: block;
+  float: left;
+}
+
+.faq .more .span span {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: block;
+}
+
+.faq .more .span span:before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.faq .more .span:hover span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.faq .more .arrow {
+  background: url(/themes/wri/images/arrow1.png) no-repeat 0 0;
+  width: 39px;
+  height: 7px;
+  display: block;
+  float: right;
+  margin: 5px 0 0 15px;
+}
+
+.faq .contact {
+  width: 405px;
+  height: 160px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #a1ba42;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 42px 0 0 46px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.faq .contact:hover {
+  background: #bdcf79;
+}
+
+.faq .contact .text {
+  font-size: 40px;
+  font-family: acumin-pro-condensed, sans-serif;
+  display: block;
+}
+
+.faq .contact .arrow {
+  background: url(/themes/wri/images/arrow3.png) no-repeat 0 0;
+  width: 38px;
+  height: 7px;
+  position: absolute;
+  top: 55px;
+  left: 226px;
+}
+
+.faq .contact .text,
+.faq .contact .text1 {
+  display: block;
+}
+
+.faq .contact .text span,
+.faq .contact .text1 span {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: block;
+}
+
+.faq .contact .text span:before,
+.faq .contact .text1 span:before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.faq .contact:hover .text span,
+.faq .contact:hover .text1 span {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.grid .img-more {
+  width: 33% !important;
+}
+
+.footer .container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.footer > .container:nth-child(1) {
+  padding: 70px 0 0;
+}
+
+.footer img {
+  float: left;
+  margin-right: 50px;
+}
+
+.footer .address {
+  font-size: 20px;
+  line-height: 1.5;
+  float: left;
+  margin-right: 152px;
+}
+
+.footer .phone {
+  float: left;
+  border-left: 3px solid #f7a81b;
+  padding: 15px 0 10px 42px;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 48px;
+  line-height: 1.5;
+}
+
+.footer .phone span {
+  font-weight: 900;
+}
+
+.footer .border {
+  clear: both;
+}
+
+.footer .copyright {
+  float: left;
+  letter-spacing: 0.4px;
+}
+
+.footer .soc {
+  float: right;
+  width: 405px;
+}
+
+.footer .soc span {
+  float: left;
+  line-height: 27px;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+.footer .soc a {
+  background: url(/themes/wri/images/soc.png) no-repeat 0 0;
+  width: 27px;
+  height: 27px;
+  display: block;
+  float: left;
+  margin-right: 28px;
+  position: relative;
+}
+
+.footer .soc a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.2s;
+  transition: opacity 0.3s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.3s;
+  transition: transform 0.2s, opacity 0.3s, -webkit-transform 0.2s;
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  background: #000;
+  visibility: hidden;
+}
+
+.footer .soc a:hover:after {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+  visibility: visible;
+}
+
+.footer .soc .twitter {
+  background-position: -54px 0;
+}
+
+.footer .soc .linkedin {
+  background-position: -108px 0;
+}
+
+.footer .soc .youtube {
+  background-position: -160px 0;
+}
+
+.footer .soc .soc5 {
+  background-position: -215px 0;
+}
+
+.footer .soc .soc6 {
+  background-position: -268px 0;
+}
+
+.footer .soc > div:last-child {
+  margin-right: 0;
+}
+
+.footer .soc {
+  float: right;
+  width: 405px;
+}
+
+.footer .soc span {
+  float: left;
+  line-height: 27px;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+.footer .soc a {
+  background: url(/themes/wri/images/soc.png) no-repeat 0 0;
+  width: 27px;
+  height: 27px;
+  display: block;
+  float: left;
+  margin-right: 28px;
+  position: relative;
+}
+
+.footer .soc a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.2s;
+  transition: opacity 0.3s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.3s;
+  transition: transform 0.2s, opacity 0.3s, -webkit-transform 0.2s;
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  background: #000;
+  visibility: hidden;
+}
+
+.footer .soc a:hover:after {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+  visibility: visible;
+}
+
+.footer .soc .twitter {
+  background-position: -54px 0;
+}
+
+.footer .soc .linkedin {
+  background-position: -108px 0;
+}
+
+.footer .soc .youtube {
+  background-position: -160px 0;
+}
+
+.footer .soc .soc5 {
+  background-position: -215px 0;
+}
+
+.footer .soc .soc6 {
+  background-position: -268px 0;
+}
+
+.footer .soc > div:last-child {
+  margin-right: 0;
 }
 
 .bcg {
@@ -10909,7 +11462,7 @@ nav a {
   position: absolute;
   background: url(../img/cloud1.png) no-repeat top center;
   background-size: cover;
-  opacity: .3;
+  opacity: .5;
 }
 
 .clouds3 {
@@ -10918,5 +11471,5 @@ nav a {
   position: absolute;
   background: url(../img/cloud2.png) no-repeat bottom center;
   background-size: 50%;
-  opacity: .3;
+  opacity: .5;
 }

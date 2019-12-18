@@ -1,6 +1,19 @@
 
 $("document").ready(function () {
 
+	var n = $("nav.navbar");
+	var pos = n.position();					   
+	var body = $("body");
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top ) {
+			n.addClass("fixed-top");
+			body.addClass('navbar-pad');
+		} else {
+			n.removeClass("fixed-top");	
+			body.removeClass('navbar-pad');
+		}
+	});
 
 
 	// Init ScrollMagic
@@ -18,7 +31,7 @@ $("document").ready(function () {
 	.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#slide02"})
-	.setTween(".logo", {y: "-100%", ease: Linear.easeNone})
+	.setTween(".head .logo", {y: "-100%", ease: Linear.easeNone})
 	.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#slide02"})
