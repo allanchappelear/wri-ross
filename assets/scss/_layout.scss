@@ -459,8 +459,9 @@ nav {
 		}
 	}
 .footer .container {
-    max-width: 1080px;
+    
     margin: 0 auto;
+    padding: 2em 0;
 }
 
 .footer > .container:nth-child(1) {
@@ -580,13 +581,14 @@ nav {
 }
 
 .footer .soc a {
-    background: url(/themes/wri/images/soc.png) no-repeat 0 0;
+    background: #000;
     width: 27px;
     height: 27px;
     display: block;
     float: left;
     margin-right: 28px;
     position: relative;
+    color: white;
 }
 
 .footer .soc a:after {
@@ -631,4 +633,18 @@ nav {
 
 .footer .soc > div:last-child {
     margin-right: 0;
+}
+.footer .soc a {
+    width: 27px;
+    height: 27px;
+    display: block;
+    float: left;
+    margin-right: 28px;
+    position: relative;
+    background: black;
+    border-radius: 28px;
+    text-align: center;
+    padding: 2px;
+    font-size: 15px;
+    color: white;
 }
