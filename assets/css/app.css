@@ -10767,7 +10767,7 @@ nav a {
 .city {
   width: 100%;
   height: 80vh;
-  background: url(../img/smog-city.jpg);
+  background: url(../img/header.jpg);
   background-size: cover;
   position: absolute;
   z-index: 1;
@@ -10830,7 +10830,7 @@ nav a {
   border-radius: 18px;
   background: black;
   top: -9px;
-  right: 50%;
+  right: 45%;
   content: '';
   position: absolute;
 }
@@ -11570,11 +11570,42 @@ nav a {
   padding-bottom: 5em;
 }
 
+.aim h4 {
+  font-size: 2em;
+}
+
+.process-section {
+  padding: 10em 0 20em;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-section .apply-button a {
+  display: block;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+  background: #a1ba42;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: white;
+  font-family: acumin-pro-condensed, sans-serif;
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2em;
+}
+
 .clouds {
   width: 120%;
   height: 100%;
   position: absolute;
-  background: url(../img/hanoi-1.jpg) no-repeat center 500px #fff;
+  background: url(../img/hanoi-1.jpg) no-repeat #fff;
   background-size: cover;
 }
 

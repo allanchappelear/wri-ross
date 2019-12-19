@@ -79,12 +79,34 @@
 }
 .aim {
     padding-bottom: 5em;
+    h4 {
+        font-size: 2em;
+    }
+}
+.process-section {
+    padding: 10em 0 20em;
+    position: relative;
+    overflow: hidden;
+    .apply-button {
+        a {
+            display: block;
+            width: 100%;
+            @include gradient;
+            color: white;
+            font-family: $acumin-condensed;
+            text-align: center;
+            padding: 1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 2em;
+        }
+    }
 }
 .clouds {
     width: 120%;
     height: 100%;
     position: absolute;
-    background: url(../img/hanoi-1.jpg) no-repeat center 500px #fff;
+    background: url(../img/hanoi-1.jpg) no-repeat #fff;
     background-size: cover;
 }
 .clouds2 {
