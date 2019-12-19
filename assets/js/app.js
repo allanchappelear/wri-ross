@@ -27,6 +27,10 @@ $("document").ready(function () {
 	.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#slide02"})
+	.setTween(".about-bg", {y: "-35%", ease: Linear.easeNone})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#slide02"})
 	.setTween(".tagline", {y: "-200%", ease: Linear.easeNone})
 	.addTo(controller);
 

@@ -16,7 +16,8 @@ h1 {
 h2 {
 	font-size: 3em;
 	strong {
-		border-top: 2px solid $blue;
+		//border-top: 2px solid $blue;
+		color: $blue;
 	}
 }
 h3 {
@@ -94,3 +95,32 @@ blockquote {
     margin-top: -65px;
 }
 
+
+.hexagon {
+  position: relative;
+  width: 20px; 
+  height: 11.55px;
+  background-color: $blue;
+  margin: 5.77px 0;
+  display: inline-block;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 5.77px solid $blue;;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid $blue;;
+}
