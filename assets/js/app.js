@@ -69,11 +69,22 @@ $("document").ready(function () {
 					$(window).scroll(function() {
 					  var scroll = $(window).scrollTop();
 						$(".city").css({
-							transform: 'translate3d(0%, -'+(scroll/200)+'%, 0) scale('+(100 + scroll/60)/100+')',
+							transform: 'translate3d(0%, -'+(scroll/200)+'%, 0) scale('+(100 + scroll/4)/100+')',
+							//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+							//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+							filter: "blur(" + (scroll/200) + "px)"
+						});
+						if(scroll > 500) {
+							$(".zoom").css({
+							transform: 'translate3d(0%, -'+(scroll/200)+'%, 0) scale('+(100 + scroll/80)/100+')',
 							//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
 							//"-webkit-filter": "blur(" + (scroll/200) + "px)",
 							//filter: "blur(" + (scroll/200) + "px)"
 						});
+							$(".city").fadeOut();
+						} else {
+							$(".city").fadeIn();
+						}
 					});
 				});
 

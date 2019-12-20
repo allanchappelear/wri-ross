@@ -10568,10 +10568,6 @@ a.text-dark:hover, a.text-dark:focus {
   border: 2px solid #0099cc;
 }
 
-.btn-primary.apply {
-  font-size: 1em;
-}
-
 body {
   font-family: acumin-pro, sans-serif;
 }
@@ -10711,10 +10707,6 @@ body {
   font-size: 18px;
 }
 
-body.navbar-pad {
-  padding-top: 86px;
-}
-
 .head {
   height: 80vh;
   background: #00131a;
@@ -10762,15 +10754,25 @@ nav .navbar-brand {
 nav a {
   font-weight: 300;
   text-decoration: none;
+  color: white;
 }
 
-.city {
-  width: 100%;
-  height: 80vh;
-  background: url(../img/header.jpg);
-  background-size: cover;
-  position: absolute;
-  z-index: 1;
+nav .nav-link {
+  color: white !important;
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+nav .apply {
+  background-color: #a1ba42;
+  border-color: #a1ba42;
+  color: white;
+  font-size: .7em;
+}
+
+.bg-dark {
+  background-color: none !important;
 }
 
 .aim {
@@ -11521,9 +11523,34 @@ nav a {
   transform: translate3d(0, 0, 0);
 }
 
+.city {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header.jpg);
+  background-size: cover;
+  position: fixed;
+  z-index: 2;
+}
+
+.zoom {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/zoom-bg.jpg);
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .about {
   overflow: hidden;
   position: relative;
+  margin-top: 140vh;
+  z-index: 3;
 }
 
 .about .about-bg {
@@ -11568,6 +11595,8 @@ nav a {
 
 .aim {
   padding-bottom: 5em;
+  z-index: 3;
+  position: relative;
 }
 
 .aim h4 {
@@ -11575,9 +11604,10 @@ nav a {
 }
 
 .process-section {
-  padding: 10em 0 20em;
+  padding: 4em 0 20em;
   position: relative;
   overflow: hidden;
+  background: white;
 }
 
 .process-section .apply-button a {
