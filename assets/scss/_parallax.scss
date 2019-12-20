@@ -44,6 +44,7 @@
     background-size: cover;
     position: fixed;
     z-index: 2;
+
 }
 .zoom {
     width: 100%;
@@ -91,12 +92,7 @@
         }
 
     }
-    h2 {
-        color: white;
-        strong {
-            color: $green;
-        }
-    }
+    
     p {
         color: white;
     }
@@ -114,6 +110,7 @@
     position: relative;
     overflow: hidden;
     background: white;
+    
     .apply-button {
         a {
             display: block;
