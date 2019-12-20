@@ -135,7 +135,7 @@ nav {
 			position: relative;
 			top: -7px;
 			margin: 0 auto;
-			
+
 		}
 		border-top: 4px solid $gray-500;
 		position: relative;
@@ -215,19 +215,51 @@ nav {
 }
 
 .jury {
-	background: url(../img/angle-bg.jpg) top no-repeat;
 	background-size: cover;
+	h2 {
+		font-size: 6em;
+		line-height: .9em;
+		font-weight: 900;
+		text-transform: uppercase;
+		strong {
+			display: block;
+			font-size: 1.35em;
+
+		}
+		small {
+			display: block;
+			font-size: .5em;
+			margin-top: -30px;
+		}
+	}
+	.jury-items {
+	}
+	.row-offset {
+		width: 600px;
+		margin-left: 113px;
+		margin-top: -50px;
+		margin-bottom: -50px;
+
+		}
+		.row-last {
+
+		margin-top: -50px;
+		margin-bottom: 3em;
+		}
 	.item {
 		position: relative;
+		display: inline-block;
 		border-radius: 25px;
 		overflow: hidden;
-		width: 19.8%;
+		width: 190px;
 		height: 200px;
 		margin: 0 1px 2px 0;
+		
 		img {
 			position: relative;
 			width: 100%;
-			height: auto;
+			height: 200px;
+
 		}
 		.caption {
 			border-radius: 25px;
@@ -235,7 +267,7 @@ nav {
 			position: absolute;
 			color: white;
 			background: $blue;
-			top: 137px;
+			top: 200px;
 			opacity: .9;
 			height: 217px;
 			width: 75%;
@@ -258,6 +290,9 @@ nav {
 
 			}
 		}
+	}
+	.content {
+		padding: 5em;
 	}
 }
 #advisory_council {
