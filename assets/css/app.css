@@ -10741,7 +10741,7 @@ body {
   z-index: 2;
   position: relative;
   border-radius: 0;
-  top: 70px;
+  top: 100px;
 }
 
 .head .tagline {
@@ -10773,8 +10773,14 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 100000;
-  -webkit-transition: all ease-in-out .5s;
-  transition: all ease-in-out .5s;
+  height: 80px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav .navbar {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 nav .navbar-brand {
@@ -10793,6 +10799,8 @@ nav.scrolled {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 nav.scrolled .navbar-brand {

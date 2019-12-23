@@ -23,7 +23,7 @@ body.navbar-pad {
 		z-index: 2;
 		position: relative;
 		border-radius: 0;
-		top: 70px;
+		top: 100px;
 	}
 	.tagline {
 		color: white;
@@ -52,7 +52,11 @@ nav {
 	border-bottom: 1px solid transparentize(white, .9);
 	position: relative;
 	z-index: 100000;
-	transition: all ease-in-out .5s;
+	height: 80px;
+	transition: all 0.5s ease;
+	.navbar {
+		transition: all 0.5s ease;
+	}
 	//border-bottom: 1px solid rgba(255,255,255,.5);
 	.navbar-brand {
 		padding: 5px;
@@ -62,6 +66,8 @@ nav {
 
 	&.scrolled {
 		@include gradient;
+			transition: all 0.5s ease;
+
 		.navbar-brand {
 			display: block;
 		}
