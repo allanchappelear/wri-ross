@@ -64,6 +64,14 @@ $("document").ready(function () {
 	new ScrollMagic.Scene({triggerElement: "#slide04"})
 	.setTween(".plax-x3", {x: "-25%", ease: Linear.easeNone})
 	.addTo(controller);				
+
+	new ScrollMagic.Scene({triggerElement: ".jury"})
+	.setTween(".hex-bg", {y: "-100%", ease: Linear.easeNone})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#advisory_council"})
+	.setTween(".hex-bg2", {y: "-50%", ease: Linear.easeNone})
+	.addTo(controller);							
 					//.addIndicators()
 
 

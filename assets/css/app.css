@@ -10570,6 +10570,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: acumin-pro, sans-serif;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -10740,7 +10741,7 @@ body {
   z-index: 2;
   position: relative;
   border-radius: 0;
-  top: 40px;
+  top: 70px;
 }
 
 .head .tagline {
@@ -10769,7 +10770,7 @@ nav {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 100000;
   -webkit-transition: all ease-in-out .5s;
@@ -10777,8 +10778,9 @@ nav {
 }
 
 nav .navbar-brand {
-  padding: 0;
+  padding: 5px;
   border-radius: 0;
+  display: none;
 }
 
 nav.scrolled {
@@ -10791,6 +10793,10 @@ nav.scrolled {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+}
+
+nav.scrolled .navbar-brand {
+  display: block;
 }
 
 nav a {
@@ -10821,44 +10827,38 @@ nav .apply {
   color: white;
   font-size: 5.1em;
   line-height: .7;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
 }
 
 .about h2 strong {
   color: white;
+  font-size: 1.15em;
 }
 
 .about h2 span {
   display: inline-block;
-  font-size: 2.9em;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: -.02em;
   line-height: .5;
-  margin-left: -7px;
 }
 
 .about h2 small {
-  font-size: 52px;
+  font-size: .7em;
   line-height: 9px;
   display: inline-block;
-  top: -26px;
+  top: -19px;
   position: relative;
 }
 
 .aim {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
-  background: #a1ba42;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
   color: white;
-}
-
-.aim .hexagon {
-  position: absolute;
-  left: -15px;
-  top: 5px;
+  /*.hexagon {
+		position: absolute;
+		left: -15px;
+		top: 5px;
+	}*/
 }
 
 .aim h3 {
@@ -10866,15 +10866,45 @@ nav .apply {
   text-transform: uppercase;
   color: white;
   position: relative;
-  top: 25px;
   font-size: 6em;
 }
 
 .aim h4 {
+  line-height: 160px;
+  height: 160px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.hex-bg-gradient {
+  font-weight: 900;
+  color: black;
+  font-size: 4em;
+  font-family: acumin-pro-condensed, sans-serif;
+  color: #6c757d;
+  display: block;
+  text-align: center;
+  background: url(../img/hex-bg-gradient.svg) center center no-repeat;
+  background-size: 80px;
+  height: 100px;
+  color: white;
+}
+
+.hex-bg-outline {
+  font-weight: 900;
+  color: black;
+  font-size: 4em;
+  font-family: acumin-pro-condensed, sans-serif;
+  color: #6c757d;
+  display: block;
+  text-align: center;
+  background: url(../img/hex-bg-outline.svg) center center no-repeat;
+  background-size: 140px;
   color: white;
 }
 
 .process .step {
+  padding-top: 1em;
   border-top: 4px solid #adb5bd;
   position: relative;
   background: rgba(255, 255, 255, 0.4);
@@ -10905,14 +10935,19 @@ nav .apply {
   color: black;
   font-size: 4em;
   font-family: acumin-pro-condensed, sans-serif;
-  color: #adb5bd;
+  color: #6c757d;
+  display: block;
+  background: url(../img/hex-bg-gray.svg) center center no-repeat;
+  background-size: 80px;
+  height: 100px;
+  color: white;
 }
 
 .process .step p {
   color: black;
   text-transform: uppercase;
   font-family: acumin-pro-condensed, sans-serif;
-  color: #adb5bd;
+  color: #6c757d;
   font-size: 1.3em;
 }
 
@@ -10921,13 +10956,16 @@ nav .apply {
 }
 
 .process .current {
-  background: #f0fbff;
   border-top-color: #0099cc;
-  color: #0099cc;
+  background: #f0fbff;
 }
 
 .process .current h3 {
-  color: #0099cc;
+  color: white;
+  background: url(../img/hex-bg.svg) center center no-repeat;
+  background-size: 80px;
+  height: 100px;
+  color: white;
 }
 
 .process .current p {
@@ -11031,10 +11069,10 @@ nav .apply {
   top: 200px;
   opacity: .9;
   height: 217px;
-  width: 75%;
+  width: 100%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-size: .9em;
+  font-size: .8em;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
   background: #a1ba42;
   /* Old browsers */
@@ -11065,8 +11103,19 @@ nav .apply {
 }
 
 #advisory_council {
-  background: url(../img/angle-bg2.jpg) bottom no-repeat;
-  background-size: cover;
+  background: white;
+}
+
+#advisory_council h2 {
+  text-transform: uppercase;
+  line-height: .8;
+  margin-bottom: 1em;
+}
+
+#advisory_council h2 strong {
+  display: block;
+  font-size: .85em;
+  letter-spacing: -1px;
 }
 
 #advisory_council .img-more {
@@ -11097,10 +11146,10 @@ nav .apply {
   position: absolute;
   color: white;
   background: #0099cc;
-  top: 137px;
+  top: 200px;
   opacity: .9;
   height: 217px;
-  width: 75%;
+  width: 100%;
   font-size: .8em;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -11133,7 +11182,6 @@ nav .apply {
   /* IE6-9 fallback on horizontal gradient */
   color: white;
   padding: 3em 0 0 0;
-  margin-top: 3em;
 }
 
 .faq {
@@ -11146,7 +11194,6 @@ nav .apply {
 
 .faq .title {
   font-size: 150px;
-  letter-spacing: 0;
 }
 
 .faq ul {
@@ -11222,21 +11269,20 @@ nav .apply {
   position: relative;
   top: -166px;
   left: -39px;
-  letter-spacing: 15px;
+  letter-spacing: -10px;
   text-decoration: none;
   font-weight: 900;
 }
 
 .faq ul {
   float: left;
-  margin: 60px 0 0 180px;
+  margin: 60px 0 0 270px;
 }
 
 .faq li {
   position: relative;
-  padding-left: 45px;
-  padding-bottom: 30px;
   list-style: none;
+  padding: 0 15px 30px 15px;
 }
 
 .faq li:before {
@@ -11245,16 +11291,16 @@ nav .apply {
   height: 9px;
   background: #fff;
   position: absolute;
-  top: 3px;
+  top: 15px;
   left: 0;
 }
 
 .faq li a {
-  font-size: 17px;
   color: #fff;
   text-decoration: underline;
   display: block;
-  height: 15px;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-size: 1.4em;
 }
 
 .faq li a span {
@@ -11303,6 +11349,7 @@ nav .apply {
 .faq .more .span {
   display: block;
   float: left;
+  font-family: acumin-pro-condensed, sans-serif;
 }
 
 .faq .more .span span {
@@ -11328,12 +11375,12 @@ nav .apply {
 }
 
 .faq .more .arrow {
-  background: url(/themes/wri/images/arrow1.png) no-repeat 0 0;
+  background: url(../img/arrow1.png) no-repeat 0 0;
   width: 39px;
   height: 7px;
   display: block;
   float: right;
-  margin: 5px 0 0 15px;
+  margin: 16px 0 0 15px;
 }
 
 .faq .contact {
@@ -11363,11 +11410,11 @@ nav .apply {
 }
 
 .faq .contact .arrow {
-  background: url(/themes/wri/images/arrow3.png) no-repeat 0 0;
+  background: url(../img/arrow1.png) no-repeat 0 0;
   width: 38px;
   height: 7px;
   position: absolute;
-  top: 55px;
+  top: 70px;
   left: 226px;
 }
 
@@ -11405,7 +11452,13 @@ nav .apply {
   width: 33% !important;
 }
 
+.footer {
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
 .footer .container {
+  background: white;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -11447,6 +11500,14 @@ nav .apply {
 .footer .copyright {
   float: left;
   letter-spacing: 0.4px;
+}
+
+.copy-social {
+  clear: both;
+  border-top: 1px solid #ddd;
+  padding: 0 0 1em 0;
+  font-size: .9em;
+  letter-spacing: 0;
 }
 
 .footer .soc {
@@ -11703,6 +11764,15 @@ nav .apply {
 }
 
 .aim {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+  background: #a1ba42;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
   padding-bottom: 5em;
   z-index: 3;
   position: relative;
@@ -11721,20 +11791,13 @@ nav .apply {
 
 .process-section .apply-button a {
   display: block;
-  width: 100%;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
+  width: 50%;
+  margin: 1em auto;
   background: #a1ba42;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
   color: white;
   font-family: acumin-pro-condensed, sans-serif;
   text-align: center;
-  padding: 1em;
+  padding: .2em;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 2em;
@@ -11764,4 +11827,32 @@ nav .apply {
   background: url(../img/cloud2.png) no-repeat bottom center;
   background-size: 50%;
   opacity: .5;
+}
+
+.hex-bg {
+  position: absolute;
+  background: url(../img/hex-bg.jpg) no-repeat top center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+}
+
+.hex-bg2 {
+  position: absolute;
+  background: url(../img/hex-bg2.jpg) no-repeat top center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  right: 0;
+  top: 10%;
+}
+
+.hex-bg-white {
+  position: absolute;
+  background: url(../img/hex-bg-white.png) no-repeat top center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  top: 0;
 }

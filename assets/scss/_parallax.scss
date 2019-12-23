@@ -98,6 +98,7 @@
     }
 }
 .aim {
+    @include gradient;
     padding-bottom: 5em;
     z-index: 3;
     position: relative;
@@ -114,18 +115,22 @@
     .apply-button {
         a {
             display: block;
-            width: 100%;
-            @include gradient;
+            width: 50%;
+            margin: 1em auto;
+            //@include gradient;
+            background: $green;
             color: white;
             font-family: $acumin-condensed;
             text-align: center;
-            padding: 1em;
+            padding: .2em;
             text-transform: uppercase;
             text-decoration: none;
             font-size: 2em;
         }
     }
 }
+
+
 
 .clouds {
     width: 120%;
@@ -149,4 +154,31 @@
     background: url(../img/cloud2.png) no-repeat bottom center;
     background-size: 50%;
     opacity: .5;
+}
+
+.hex-bg {
+    position: absolute;
+    background: url(../img/hex-bg.jpg) no-repeat top center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+}
+
+.hex-bg2 {
+    position: absolute;
+    background: url(../img/hex-bg2.jpg) no-repeat top center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    right: 0;
+    top: 10%;
+}
+.hex-bg-white {
+    position: absolute;
+    background: url(../img/hex-bg-white.png) no-repeat top center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    top: 0;
 }

@@ -29,6 +29,9 @@
     </div>
   </article>
   <nav class="navbar navbar-expand-lg navbar-dark p-0 fixed-top">
+    <div class="container">    
+      <a class="navbar-brand" href="#"><img src="assets/img/logo-horizontal.svg" width="150"></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,6 +52,7 @@
           </li>
         </ul>
       </div>
+      </div>
     </div>
   </nav>
   <article id="slide02" class="about">
@@ -59,39 +63,40 @@
         <div class="col-md-6 img-border big-changes plax">
         </div>
         <div class="col-md-6 content">
-          <h2><strong><span>BIG <br></span>CHANGES</strong><br> <small>CAN START SMALL</small></h2>
+          <h2><strong>Inclusive</strong><br><span>cities for a</span><small>changing climate</small></h2>
           <p>The WRI Ross Prize for Cities is the premier global award celebrating and spotlighting transformative urban change. With the generous support of Stephen M. Ross, the prize awards $250,000 to one project that has ignited citywide change.</p>
         </div>
       </div>
     </div>
+
   </article>
-  <article id="slide03" class="aim">
+  
+<article id="slide03" class="aim">
+  <div class="hex-bg-white"></div>
+  <div class="hex-bg-white2"></div>
     <h3>We aim to…</h3>
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <span class="hexagon"></span>
-          <h4>INSPIRE</h4>
+        <div class="col-md-3 text-center">
+          <h4 class="hex-bg-outline">INSPIRE</h4>
           <p>a new sense of possibility</p>
         </div>
-        <div class="col-md-3">
-          <span class="hexagon"></span>
-          <h4>DISCOVER</h4>
+        <div class="col-md-3 text-center">
+          <h4 class="hex-bg-outline">DISCOVER</h4>
           <p>how big changes can start small</p>
         </div>
-        <div class="col-md-3">
-          <span class="hexagon green"></span>
-          <h4>CONNECT</h4>
+        <div class="col-md-3 text-center">
+          <h4 class="hex-bg-outline">CONNECT</h4>
           <p> the work we do and the change we want to see in the world</p>
         </div>
-        <div class="col-md-3">
-          <span class="hexagon green"></span>
-          <h4>CREATE</h4>
+        <div class="col-md-3 text-center">
+          <h4 class="hex-bg-outline">CREATE</h4>
           <p>better cities by amplifying transformative initiatives</p>
         </div>
       </div>
     </div>
   </article>
+   
   <article id="slide04" class="process-section">
     <div class="clouds plax-x"></div>
     <div class="clouds2 plax-x2"></div>
@@ -100,37 +105,54 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2 offset-md-1 step current">
-            <div class="hexagon"></div>
-            <h3>01</h3>
+            
+            <h3 class="hex-bg-number-blue">01</h3>
             <p>Applications open</p>
             <p class="date">February 2020</p>
           </div>
           <div class="col-md-2 step">
-            <h3>02</h3>
+            <h3 class="hex-bg-number">02</h3>
             <p>Applications close</p>
             <p class="date">July 2020</p>
           </div>
           <div class="col-md-2 step">
-            <h3>03</h3>
+            <h3 class="hex-bg-number">03</h3>
             <p>Five finalists announced</p>
             <p class="date">December 2020</p>
           </div>
           <div class="col-md-2 step">
-            <h3>04</h3>
+            <h3 class="hex-bg-number">04</h3>
             <p>Jury completes final reviews</p>
             <p class="date">February 2021</p>
           </div>
           <div class="col-md-2 step">
-            <h3>05</h3>
+            <h3 class="hex-bg-number">05</h3>
             <p>Winner Announced</p>
             <p class="date">April 2021</p>
           </div>
           <div class="col-md-10 offset-md-1 p-0 apply-button">
-            <a href="#">Apply Today!</a>
+            <a href="#">Apply Now</a>
           </div>
         </div>
       </div>
     </article>
+    <article class="faq bg" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div>
+        <ul>
+          <li><a href="#" class="guide-link">Guide to the Application</a></li>
+          <li><a href="#" class="terms-link">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <a href="#" class="more"><span class="span">SEE MORE</span><span class="arrow"></span></a>
+      <a href="javascript:void(0);" class="contact">
+        <span class="text">Contact Us</span>
+        <span class="arrow"></span>
+        <span class="text1">For any information</span>
+      </a>
+    </div>
+  </article>
     <!--<div class="slide03" class="finalists">
       <div class="container">
         <div class="row">
@@ -168,14 +190,20 @@
         <div class="row">
           <div class="col-md-12">
             <h2><strong>193</strong> APPLICATIONS RECEIVED</h2>
-            <img src="assets/img/map.png" class="w-100">
+            <div id="gmap"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYJlQ_P1Sc4QZItwJGwG5E_G2pdmlcQPQ&amp;callback=initMap" async="async" defer="defer"></script>
           </div>
         </div>
       </div>
     </article>
-    <article id="slide04" class="jury bg">
+    <article id="slide04" class="jury bg py-5">
+      <div class="hex-bg">
+
+      </div>
+      
       <div class="container">
         <div class="photos" id="jury">
+
           <div class="row mb-5">
             <div class="col-md-7 text-center">
               <div class="img">
@@ -311,7 +339,9 @@
         
     </div>
   </article>
-  <article class="people bg pt-5 mt-5" id="advisory_council">
+  <article class="people bg py-5" id="advisory_council">
+    <div class="hex-bg2">
+      </div>
     <div class="container">
       <h2><strong>Advisory</strong> Council</h2>
     </div>
@@ -329,7 +359,7 @@
                     <img src="assets/img/bios/img7.jpg" width="600" height="600" alt="" typeof="Image">
                     <div class="hover">
                       <div class="title">Skye Duncan</div>
-                      Director, Global Designing Cities Initiative at NACTO
+                      <span class="caps">Director</span>, Global Designing Cities Initiative at NACTO
                     </div>
                   </div>
                 </div>
@@ -338,7 +368,7 @@
                     <img src="assets/img/bios/img8.jpg" width="600" height="600" alt="" typeof="Image">
                     <div class="hover">
                       <div class="title">Diza Gonzaga</div>
-                      President, Thiago de Moraes Gonzaga Foundation
+                      <span class="caps">President</span>, Thiago de Moraes Gonzaga Foundation
                     </div>
                   </div>
                 </div>
@@ -759,23 +789,7 @@
       </div>
     </div>
   </article>
-  <article class="faq bg" id="faq">
-    <div class="container">
-      <h2>FAQ</h2>
-      <div>
-        <ul>
-          <li><a href="#" class="guide-link">Guide to the Application</a></li>
-          <li><a href="#" class="terms-link">Terms and Conditions</a></li>
-        </ul>
-      </div>
-      <a href="#" class="more"><span class="span">SEE MORE</span><span class="arrow"></span></a>
-      <a href="javascript:void(0);" class="contact">
-        <span class="text">Contact Us</span>
-        <span class="arrow"></span>
-        <span class="text1">For any information</span>
-      </a>
-    </div>
-  </article>
+ 
   <footer class="footer bg">
     <div class="container">
       <a href="http://wrirosscities.org/">
@@ -789,7 +803,7 @@
         <span>PHONE</span> +1 (202) 729-7600 <br><span>FAX</span> +1 (202) 729-7610
       </div>
     </div>
-    <div class="border">
+    <div class="copy-social">
       <div class="container">
         <div class="copyright">© 2019, WRI Ross Prize for Cities</div>
         <div class="soc">
