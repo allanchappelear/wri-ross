@@ -643,6 +643,83 @@ nav {
 .faq .contact:hover .text1 span {
     transform: translateY(-100%);
 }	
+
+
+
+.news-item {
+	position: relative;
+	height: 280px;
+	clear: both;
+	overflow: hidden;
+
+	&.featured {
+		height: 410px;
+		img {
+			transform: scale(1.3);
+		}
+	}
+	&:hover {
+		img {
+			transform: scale(1.4);
+
+		}
+	}
+	
+	.title {
+		color: white;
+		position: absolute;
+		z-index: 2;
+		left: 0px;
+		right: 0px;
+		//top: 0px;
+		font-family: $acumin-condensed;
+		font-size: 1.5em;
+		line-height: 1;
+		letter-spacing: -1px;
+		text-align: right;
+		//text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+		@include gradient;
+		opacity: .9;
+		padding: 1em;
+		bottom: 0;
+
+	}
+	.date {
+	
+		font-family: $acumin;
+		font-size: .6em;
+
+
+	}
+	img {
+		transition: transform .2s; /* Animation */
+		position: absolute;
+		border-radius: 0;
+	}
+
+}
+
+.register {
+		font-family: $acumin-condensed;
+		font-size: 1.5em;
+		line-height: 1;
+		letter-spacing: -1px;
+		text-align: center;
+		display: block;
+		@include gradient;
+		clear: both;
+		color: white;
+		font-weight: 900;
+		padding: 1.15em;
+		.hex-bg-white {
+			z-index: 1;
+			position: absolute;
+			bottom: 0;
+			top: 50%;
+			left: 0;
+			opacity: .7;
+		}
+	}
 .grid {
 		.img-more {
 			width: 33% !important;
@@ -654,6 +731,11 @@ nav {
 	    color: #333 !important;
 	    font-size: 14px;
 	}
+
+
+
+
+
 .footer .container {
     background: white;
     margin: 0 auto;
