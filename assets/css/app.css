@@ -10836,6 +10836,11 @@ nav .apply {
   background-color: none !important;
 }
 
+.angle {
+  -webkit-clip-path: polygon(0 0, 1600px 8%, 1600px 91%, 0 100%);
+          clip-path: polygon(0 0, 1600px 8%, 1600px 91%, 0 100%);
+}
+
 .about h2 {
   color: white;
   font-size: 5.1em;
@@ -10867,6 +10872,12 @@ nav .apply {
 
 .aim {
   color: white;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  position: relative;
+  top: -50px;
+  margin-bottom: -95px;
+  position: relative;
   /*.hexagon {
 		position: absolute;
 		left: -15px;
@@ -11135,7 +11146,7 @@ nav .apply {
   position: relative;
   border-radius: 25px;
   overflow: hidden;
-  width: 19.8%;
+  width: 200px;
   height: 200px;
   margin: 0 1px 2px 0;
 }
@@ -11181,6 +11192,13 @@ nav .apply {
   bottom: 0;
   top: 0;
   width: 100%;
+}
+
+#advisory_council .hex-row-layout {
+  display: inline-block;
+  position: relative;
+  margin-left: -100px;
+  margin-top: -50px;
 }
 
 #faq {
@@ -11237,8 +11255,10 @@ nav .apply {
 }
 
 .faq li a {
-  font-size: 14px;
+  font-size: 3em;
   height: 13px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .faq .title {
@@ -11486,8 +11506,8 @@ nav .apply {
   color: white;
   position: absolute;
   z-index: 2;
-  left: 0px;
-  right: 0px;
+  left: -5px;
+  right: -5px;
   font-family: acumin-pro-condensed, sans-serif;
   font-size: 1.5em;
   line-height: 1;
@@ -11504,7 +11524,15 @@ nav .apply {
   /* IE6-9 fallback on horizontal gradient */
   opacity: .9;
   padding: 1em;
-  bottom: 0;
+  bottom: -10px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.news-item .title span, .news-item .title .date {
+  display: block;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 .news-item .date {
@@ -11551,10 +11579,6 @@ nav .apply {
   top: 50%;
   left: 0;
   opacity: .7;
-}
-
-.grid .img-more {
-  width: 33% !important;
 }
 
 .footer {
@@ -11880,7 +11904,6 @@ nav .apply {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  padding-bottom: 5em;
   z-index: 3;
   position: relative;
 }
@@ -11962,4 +11985,16 @@ nav .apply {
   width: 500px;
   height: 500px;
   top: 0;
+}
+
+.aim-plax {
+  position: absolute;
+  color: white;
+  z-index: 100;
+}
+
+.aim-plax h3 {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
 }

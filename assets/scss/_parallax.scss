@@ -99,7 +99,7 @@
 }
 .aim {
     @include gradient;
-    padding-bottom: 5em;
+    //padding-bottom: 5em;
     z-index: 3;
     position: relative;
     h4 {
@@ -181,4 +181,16 @@
     width: 500px;
     height: 500px;
     top: 0;
+}
+
+.aim-plax {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    h3 {
+        font-size: 5em;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
 }

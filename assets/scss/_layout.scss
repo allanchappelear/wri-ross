@@ -93,6 +93,12 @@ nav {
 .bg-dark {
 	background-color: none !important;
 }
+.angle {
+	  clip-path: polygon(0 0, 1600px 8%, 1600px 91%, 0 100%)
+}
+
+
+
 .about {
 	h2 {
 		color: white;
@@ -121,8 +127,21 @@ nav {
 		}
 	}
 }
+
 .aim {
 	color: white;
+	padding-top: 8em;
+	padding-bottom: 8em;
+	position: relative;
+	top: -50px;
+	margin-bottom: -95px;
+
+	//transform: rotate(2deg);
+	.container {
+		//transform: rotate(-2deg);
+	}
+	position: relative;
+
 	/*.hexagon {
 		position: absolute;
 		left: -15px;
@@ -146,6 +165,7 @@ nav {
 
 		}
 }
+
 .hex-bg-gradient {
 	font-weight: 900;
 	color: black;
@@ -349,7 +369,9 @@ nav {
 		padding: 5em;
 	}
 }
+
 #advisory_council {
+
 	background: white;
 	h2 {
 		text-transform: uppercase;
@@ -365,7 +387,7 @@ nav {
 		position: relative;
 		border-radius: 25px;
 		overflow: hidden;
-		width: 19.8%;
+		width: 200px;
 		height: 200px;
 		margin: 0 1px 2px 0;
 		img {
@@ -401,6 +423,12 @@ nav {
 
 			}
 		}
+	}
+	.hex-row-layout {
+		display: inline-block;
+		position: relative;
+		margin-left: -100px;
+		margin-top: -50px;
 	}
 	
 }
@@ -443,8 +471,10 @@ nav {
         padding-bottom: 20px;
     }
     .faq li a {
-        font-size: 14px;
+        font-size: 3em;
         height: 13px;
+       margin-bottom: 1em;
+       text-transform: uppercase;
     }
     .faq .title {
         font-size: 80px;
@@ -669,8 +699,8 @@ nav {
 		color: white;
 		position: absolute;
 		z-index: 2;
-		left: 0px;
-		right: 0px;
+		left: -5px;
+		right: -5px;
 		//top: 0px;
 		font-family: $acumin-condensed;
 		font-size: 1.5em;
@@ -681,7 +711,12 @@ nav {
 		@include gradient;
 		opacity: .9;
 		padding: 1em;
-		bottom: 0;
+		bottom: -10px;
+		transform: rotate(-2deg);
+		span, .date {
+			display: block;
+			transform: rotate(2deg);
+		}
 
 	}
 	.date {
@@ -721,9 +756,7 @@ nav {
 		}
 	}
 .grid {
-		.img-more {
-			width: 33% !important;
-		}
+	
 	}
 	.footer {
 	    background: white;

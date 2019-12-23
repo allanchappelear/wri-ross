@@ -42,6 +42,16 @@ $("document").ready(function () {
 	.setTween(".aim h3", {y: "-100%", ease: Linear.easeNone})
 	.addTo(controller);
 
+	new ScrollMagic.Scene({triggerElement: "#faq"})
+	.setTween("#faq h2", {y: "-50%", ease: Linear.easeNone})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#faq"})
+	.setTween("a.more", {y: "-50%", ease: Linear.easeNone})
+	.addTo(controller);
+
+	
+
 	new ScrollMagic.Scene({triggerElement: "#slide02"})
 	.setTween(".plax2", {y: "5%", ease: Linear.easeNone})
 	.addTo(controller);
@@ -71,7 +81,13 @@ $("document").ready(function () {
 
 	new ScrollMagic.Scene({triggerElement: "#advisory_council"})
 	.setTween(".hex-bg2", {y: "-50%", ease: Linear.easeNone})
-	.addTo(controller);							
+	.addTo(controller);			
+
+
+	new ScrollMagic.Scene({triggerElement: "#slide02"})
+	.setTween(".aim-plax", {y: "-100%", ease: Linear.easeNone})
+	.addTo(controller);
+				
 					//.addIndicators()
 
 
