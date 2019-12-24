@@ -10721,6 +10721,10 @@ blockquote {
   border-top: 5.77px solid #0099cc;
 }
 
+#gmap {
+  height: 45vh;
+}
+
 body {
   font-size: 18px;
 }
