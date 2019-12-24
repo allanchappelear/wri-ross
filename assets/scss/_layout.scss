@@ -13,10 +13,10 @@ body.navbar-pad {
 	right: 0;
 	left: 0;
 	.wrapper {
-        background: rgba(0,0,0,.5);
-        width: 100%;
-        height: 100vh;
-    }
+		background: rgba(0,0,0,.5);
+		width: 100%;
+		height: 100vh;
+	}
 	.logo {
 		width: 200px;
 		margin-top: 0;
@@ -66,7 +66,7 @@ nav {
 
 	&.scrolled {
 		@include gradient;
-			transition: all 0.5s ease;
+		transition: all 0.5s ease;
 
 		.navbar-brand {
 			display: block;
@@ -94,7 +94,7 @@ nav {
 	background-color: none !important;
 }
 .angle {
-	  clip-path: polygon(0 0, 1600px 8%, 1600px 91%, 0 100%)
+	clip-path: polygon(0 0, 1600px 8%, 1600px 91%, 0 100%)
 }
 
 
@@ -163,7 +163,7 @@ nav {
 		width: 140px;
 		margin: 0 auto;
 
-		}
+	}
 }
 
 .hex-bg-gradient {
@@ -246,25 +246,25 @@ nav {
 		}*/
 	}
 	.current {
-			
-			border-top-color: $blue;
-			background: lighten($blue, 57%);
-			h3 {
-				color: white;
-				background: url(../img/hex-bg.svg) center center no-repeat;
-				background-size: 80px;
-				height: 100px;
-				color: white;
-			}
-			p {
-				color: $blue;
-			}
-			&:before {
+
+		border-top-color: $blue;
+		background: lighten($blue, 57%);
+		h3 {
+			color: white;
+			background: url(../img/hex-bg.svg) center center no-repeat;
+			background-size: 80px;
+			height: 100px;
+			color: white;
+		}
+		p {
+			color: $blue;
+		}
+		&:before {
 			
 			background: $blue;
 			
 		}
-		}
+	}
 }
 .big-changes {
 	margin-top: 9em;
@@ -314,61 +314,59 @@ nav {
 		margin-top: -50px;
 		margin-bottom: -50px;
 
-		}
-		.row-last {
+	}
+	.row-last {
 
 		margin-top: -50px;
 		margin-bottom: 3em;
-		}
+	}
 	.item {
 		position: relative;
 		display: inline-block;
-		border-radius: 25px;
 		overflow: hidden;
-		width: 190px;
-		height: 200px;
+	    width: 184px;
+	    height: 196px;
 		margin: 0 1px 2px 0;
-		
+		transition: all .3s ease-in-out;
+
 		img {
 			position: relative;
-			width: 100%;
+			width: 200px;
 			height: 200px;
-
+		}
+		
+		h5 {
+			font-weight: 900;
+			font-family: $acumin-condensed;
+			font-size: 1.5em;
+			line-height: 1.2em;
+			margin-bottom: .5em;
 		}
 		.caption {
-			border-radius: 25px;
-			padding: 1.5em;
-			position: absolute;
-			color: white;
-			background: $blue;
-			top: 200px;
-			opacity: .9;
-			height: 217px;
-			width: 100%;
+		    position: absolute;
+		    background: url(../img/hex-bg-gradient.svg) center center no-repeat;
+		    width: 196px;
+		    height: 198px;
+		    top: 196px;
+		    color: white;
+		    font-size: .7em;
+		    padding: 40px 30px 30px 30px;
 			transition: all .3s ease-in-out;
-			font-size: .8em;
-			@include gradient;
-			h5 {
-				font-weight: 900;
-				font-family: $acumin-condensed;
-				font-size: 1.15em;
-				line-height: 1.2em;
-				margin-bottom: 1em;
-			}
+
 		}
 		&:hover {
 			.caption {
-				bottom: 0;
 				top: 0;
-								width: 100%;
-
+			    width: 196px;
 			}
 		}
 	}
-	.content {
-		padding: 5em;
-	}
+
 }
+.content {
+	padding: 5em;
+}
+
 
 #advisory_council {
 
@@ -399,27 +397,26 @@ nav {
 			font-size: 1.2em;
 			line-height: 1.1em;
 			font-family: $acumin-condensed;
-			margin-bottom: 1em;
+			margin-bottom: .5em;
 		}
 		.hover {
-			border-radius: 25px;
-			padding: 1.5em;
 			position: absolute;
-			color: white;
-			background: $blue;
-			top: 200px;
-			opacity: .9;
-			height: 217px;
-			width: 100%;
-			font-size: .8em;
+		    background: url(../img/hex-bg-gradient.svg) center center no-repeat;
+		    width: 196px;
+		    height: 198px;
+		    top: 200px;
+		    color: white;
+		    font-size: .7em;
+		    line-height: 1.3;
+		    padding: 40px 30px 30px 30px;
 			transition: all .3s ease-in-out;
-			@include gradient;
+			text-align: center;
 		}
 		&:hover {
 			.hover {
 				bottom: 0;
 				top: 0;
-								width: 100%;
+				width: 100%;
 
 			}
 		}
@@ -440,238 +437,238 @@ nav {
 }
 
 .faq {
-        height: 400px;
-    }
-    .faq .container {
-        width: 500px;
-    }
-    .faq .title {
-        font-size: 150px;
-        
-    }
-    .faq ul {
-        margin: 30px 0 0 40px;
-    }
-    .faq p {
-        width: 370px;
-        top: 145px;
-    }
-    .faq .container {
-        width: 300px;
-    }
-    .faq .title {
-        font-size: 100px;
-        letter-spacing: 0;
-    }
-    .faq ul {
-        margin-left: 17px;
-    }
-    .faq li {
-        padding-left: 15px;
-        padding-bottom: 20px;
-    }
-    .faq li a {
-        font-size: 3em;
-        height: 13px;
-       margin-bottom: 1em;
-       text-transform: uppercase;
-    }
-    .faq .title {
-        font-size: 80px;
-        letter-spacing: 0;
-        top: -5px;
-        left: 0;
-    }
-    .faq p {
-        width: 300px;
-        top: 105px;
-        left: 0;
-        font-size: 14px;
-    }
-    .faq .more {
-        bottom: 175px;
-    }
-    .faq {
-   
-    height: 450px;
+	height: 400px;
+}
+.faq .container {
+	width: 500px;
+}
+.faq .title {
+	font-size: 150px;
+
+}
+.faq ul {
+	margin: 30px 0 0 40px;
+}
+.faq p {
+	width: 370px;
+	top: 145px;
+}
+.faq .container {
+	width: 300px;
+}
+.faq .title {
+	font-size: 100px;
+	letter-spacing: 0;
+}
+.faq ul {
+	margin-left: 17px;
+}
+.faq li {
+	padding-left: 15px;
+	padding-bottom: 20px;
+}
+.faq li a {
+	font-size: 3em;
+	height: 13px;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+.faq .title {
+	font-size: 80px;
+	letter-spacing: 0;
+	top: -5px;
+	left: 0;
+}
+.faq p {
+	width: 300px;
+	top: 105px;
+	left: 0;
+	font-size: 14px;
+}
+.faq .more {
+	bottom: 175px;
+}
+.faq {
+
+	height: 450px;
 }
 
 .faq .container {
-    width: 1080px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
+	width: 1080px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
 }
 
 .faq h2 {
-    font-size: 325px;
-    color: #fff;
-    position: relative;
-    top: -166px;
-    left: -39px;
-    letter-spacing: -10px;
-    text-decoration: none;
-    font-weight: 900;
+	font-size: 325px;
+	color: #fff;
+	position: relative;
+	top: -166px;
+	left: -39px;
+	letter-spacing: -10px;
+	text-decoration: none;
+	font-weight: 900;
 }
 .faq ul {
-    float: left;
-    margin: 60px 0 0 270px;
+	float: left;
+	margin: 60px 0 0 270px;
 }
 
 .faq li {
-    position: relative;
-    list-style: none;
-    padding: 0 15px 30px 15px;
+	position: relative;
+	list-style: none;
+	padding: 0 15px 30px 15px;
 }
 
 .faq li:before {
-    content: "";
-    width: 9px;
-    height: 9px;
-    background: #fff;
-    position: absolute;
-    top: 15px;
-    left: 0;
+	content: "";
+	width: 9px;
+	height: 9px;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+	left: 0;
 }
 
 .faq li a {
-    color: #fff;
-    text-decoration: underline;
-    display: block;
-    font-family: $acumin-condensed;
-    font-size: 1.4em;
-    
+	color: #fff;
+	text-decoration: underline;
+	display: block;
+	font-family: $acumin-condensed;
+	font-size: 1.4em;
+
 }
 
 .faq li a span {
-    position: relative;
-    transition: transform 0.3s;
-    display: block;
+	position: relative;
+	transition: transform 0.3s;
+	display: block;
 }
 
 .faq li a span:before {
-    position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    transform: translate3d(0, 0, 0);
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	transform: translate3d(0, 0, 0);
 }
 
 .faq li a:hover span {
-    transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 .faq p {
-    position: absolute;
-    top: 285px;
-    left: 45px;
-    font-size: 19px;
-    color: #fff;
-    width: 485px;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
+	position: absolute;
+	top: 285px;
+	left: 45px;
+	font-size: 19px;
+	color: #fff;
+	width: 485px;
+	line-height: 1.3;
+	letter-spacing: 0.5px;
 }
 
 .faq .more {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    font-size: 25px;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .faq .more .span {
-    display: block;
-    float: left;
-    font-family: $acumin-condensed;
+	display: block;
+	float: left;
+	font-family: $acumin-condensed;
 }
 
 .faq .more .span span {
-    position: relative;
-    transition: transform 0.3s;
-    display: block;
+	position: relative;
+	transition: transform 0.3s;
+	display: block;
 }
 
 .faq .more .span span:before {
-    position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    transform: translate3d(0, 0, 0);
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	transform: translate3d(0, 0, 0);
 }
 
 .faq .more .span:hover span {
-    transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 .faq .more .arrow {
-    background: url(../img/arrow1.png) no-repeat 0 0;
-    width: 39px;
-    height: 7px;
-    display: block;
-    float: right;
-    margin: 16px 0 0 15px;
+	background: url(../img/arrow1.png) no-repeat 0 0;
+	width: 39px;
+	height: 7px;
+	display: block;
+	float: right;
+	margin: 16px 0 0 15px;
 
 }
 
 .faq .contact {
-    width: 405px;
-    height: 160px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: $green;
-    box-sizing: border-box;
-    padding: 42px 0 0 46px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.2s;
+	width: 405px;
+	height: 160px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: $green;
+	box-sizing: border-box;
+	padding: 42px 0 0 46px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.2s;
 }
 
 .faq .contact:hover {
-    background: lighten($green, 15%);
+	background: lighten($green, 15%);
 }
 
 .faq .contact .text {
-    font-size: 40px;
-    font-family: $acumin-condensed;
-    display: block;
+	font-size: 40px;
+	font-family: $acumin-condensed;
+	display: block;
 }
 
 .faq .contact .arrow {
-    background: url(../img/arrow1.png) no-repeat 0 0;
-    width: 38px;
-    height: 7px;
-    position: absolute;
-    top: 70px;
-    left: 226px;
+	background: url(../img/arrow1.png) no-repeat 0 0;
+	width: 38px;
+	height: 7px;
+	position: absolute;
+	top: 70px;
+	left: 226px;
 }
 
 .faq .contact .text,
 .faq .contact .text1 {
-    display: block;
+	display: block;
 }
 
 .faq .contact .text span,
 .faq .contact .text1 span {
-    position: relative;
-    transition: transform 0.3s;
-    display: block;
+	position: relative;
+	transition: transform 0.3s;
+	display: block;
 }
 
 .faq .contact .text span:before,
 .faq .contact .text1 span:before {
-    position: absolute;
-    top: 100%;
-    content: attr(data-hover);
-    transform: translate3d(0, 0, 0);
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	transform: translate3d(0, 0, 0);
 }
 
 .faq .contact:hover .text span,
 .faq .contact:hover .text1 span {
-    transform: translateY(-100%);
+	transform: translateY(-100%);
 }	
 
 
@@ -720,7 +717,7 @@ nav {
 
 	}
 	.date {
-	
+
 		font-family: $acumin;
 		font-size: .6em;
 
@@ -735,70 +732,70 @@ nav {
 }
 
 .register {
-		font-family: $acumin-condensed;
-		font-size: 1.5em;
-		line-height: 1;
-		letter-spacing: -1px;
-		text-align: center;
-		display: block;
-		@include gradient;
-		clear: both;
-		color: white;
-		font-weight: 900;
-		padding: 1.15em;
-		.hex-bg-white {
-			z-index: 1;
-			position: absolute;
-			bottom: 0;
-			top: 50%;
-			left: 0;
-			opacity: .7;
-		}
+	font-family: $acumin-condensed;
+	font-size: 1.5em;
+	line-height: 1;
+	letter-spacing: -1px;
+	text-align: center;
+	display: block;
+	@include gradient;
+	clear: both;
+	color: white;
+	font-weight: 900;
+	padding: 1.15em;
+	.hex-bg-white {
+		z-index: 1;
+		position: absolute;
+		bottom: 0;
+		top: 50%;
+		left: 0;
+		opacity: .7;
 	}
+}
 .grid {
 	
-	}
-	.footer {
-	    background: white;
-	    border-top: 1px solid #ddd;
-	    color: #333 !important;
-	    font-size: 14px;
-	}
+}
+.footer {
+	background: white;
+	border-top: 1px solid #ddd;
+	color: #333 !important;
+	font-size: 14px;
+}
 
 
 
 
 
 .footer .container {
-    background: white;
-    margin: 0 auto;
-    padding: 2em 0;
+	background: white;
+	margin: 0 auto;
+	padding: 2em 0;
 }
 
 .footer > .container:nth-child(1) {
-    padding: 70px 0 0;
+	padding: 70px 0 0;
 }
 
 .footer img {
-    float: left;
-    margin-right: 50px;
+	float: left;
+	margin-right: 50px;
 }
 
 .footer .address {
-    font-size: 16px;
-    line-height: 1.5;
-    float: left;
-    margin-right: 152px;
+	font-size: 16px;
+	line-height: 1.5;
+	float: left;
+	margin-right: 152px;
 }
 
 .footer .phone {
-    float: left;
-    border-left: 3px solid #f7a81b;
-    padding: 15px 0 10px 42px;
-    font-size: 16px;
-    margin-top: -15px;
-    margin-bottom: 48px;
-    line-height: 1.5
+	float: left;
+	border-left: 3px solid #f7a81b;
+	padding: 15px 0 10px 42px;
+	font-size: 16px;
+	margin-top: -15px;
+	margin-bottom: 48px;
+	line-height: 1.5
 }
 
 .footer .phone span {
@@ -806,12 +803,12 @@ nav {
 }
 
 .footer .border {
-    clear: both;
+	clear: both;
 }
 
 .footer .copyright {
-    float: left;
-    letter-spacing: 0.4px;
+	float: left;
+	letter-spacing: 0.4px;
 }
 .copy-social {
 	clear: both;
@@ -821,147 +818,147 @@ nav {
 	letter-spacing: 0;
 }
 .footer .soc {
-    float: right;
-    width: 405px;
+	float: right;
+	width: 405px;
 }
 
 .footer .soc span {
-    float: left;
-    line-height: 27px;
-    margin-right: 40px;
-    font-size: 15px;
+	float: left;
+	line-height: 27px;
+	margin-right: 40px;
+	font-size: 15px;
 }
 
 .footer .soc a {
-    background: url(/themes/wri/images/soc.png) no-repeat 0 0;
-    width: 27px;
-    height: 27px;
-    display: block;
-    float: left;
-    margin-right: 28px;
-    position: relative;
+	background: url(/themes/wri/images/soc.png) no-repeat 0 0;
+	width: 27px;
+	height: 27px;
+	display: block;
+	float: left;
+	margin-right: 28px;
+	position: relative;
 }
 
 .footer .soc a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: transform 0.2s, opacity 0.3s;
-    top: -2px;
-    left: -2px;
-    padding: 2px;
-    background: #000;
-    visibility: hidden;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: transform 0.2s, opacity 0.3s;
+	top: -2px;
+	left: -2px;
+	padding: 2px;
+	background: #000;
+	visibility: hidden;
 }
 
 .footer .soc a:hover:after {
-    transform: scale(1.3);
-    opacity: 0;
-    visibility: visible;
+	transform: scale(1.3);
+	opacity: 0;
+	visibility: visible;
 }
 
 .footer .soc .twitter {
-    background-position: -54px 0;
+	background-position: -54px 0;
 }
 
 .footer .soc .linkedin {
-    background-position: -108px 0;
+	background-position: -108px 0;
 }
 
 .footer .soc .youtube {
-    background-position: -160px 0;
+	background-position: -160px 0;
 }
 
 .footer .soc .soc5 {
-    background-position: -215px 0;
+	background-position: -215px 0;
 }
 
 .footer .soc .soc6 {
-    background-position: -268px 0;
+	background-position: -268px 0;
 }
 
 .footer .soc > div:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 .footer .soc {
-    float: right;
-    width: 405px;
+	float: right;
+	width: 405px;
 }
 
 .footer .soc span {
-    float: left;
-    line-height: 27px;
-    margin-right: 40px;
-    font-size: 15px;
+	float: left;
+	line-height: 27px;
+	margin-right: 40px;
+	font-size: 15px;
 }
 
 .footer .soc a {
-    background: #000;
-    width: 27px;
-    height: 27px;
-    display: block;
-    float: left;
-    margin-right: 28px;
-    position: relative;
-    color: white;
+	background: #000;
+	width: 27px;
+	height: 27px;
+	display: block;
+	float: left;
+	margin-right: 28px;
+	position: relative;
+	color: white;
 }
 
 .footer .soc a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: transform 0.2s, opacity 0.3s;
-    top: -2px;
-    left: -2px;
-    padding: 2px;
-    background: #000;
-    visibility: hidden;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: transform 0.2s, opacity 0.3s;
+	top: -2px;
+	left: -2px;
+	padding: 2px;
+	background: #000;
+	visibility: hidden;
 }
 
 .footer .soc a:hover:after {
-    transform: scale(1.3);
-    opacity: 0;
-    visibility: visible;
+	transform: scale(1.3);
+	opacity: 0;
+	visibility: visible;
 }
 
 .footer .soc .twitter {
-    background-position: -54px 0;
+	background-position: -54px 0;
 }
 
 .footer .soc .linkedin {
-    background-position: -108px 0;
+	background-position: -108px 0;
 }
 
 .footer .soc .youtube {
-    background-position: -160px 0;
+	background-position: -160px 0;
 }
 
 .footer .soc .soc5 {
-    background-position: -215px 0;
+	background-position: -215px 0;
 }
 
 .footer .soc .soc6 {
-    background-position: -268px 0;
+	background-position: -268px 0;
 }
 
 .footer .soc > div:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 .footer .soc a {
-    width: 27px;
-    height: 27px;
-    display: block;
-    float: left;
-    margin-right: 28px;
-    position: relative;
-    background: black;
-    border-radius: 28px;
-    text-align: center;
-    padding: 2px;
-    font-size: 15px;
-    color: white;
+	width: 27px;
+	height: 27px;
+	display: block;
+	float: left;
+	margin-right: 28px;
+	position: relative;
+	background: black;
+	border-radius: 28px;
+	text-align: center;
+	padding: 2px;
+	font-size: 15px;
+	color: white;
 }

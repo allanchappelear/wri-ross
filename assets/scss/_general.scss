@@ -96,7 +96,7 @@ blockquote {
 }
 
 .hex-mask {
- 	mask-image: url(../img/bios/hex-mask.png);
+ 	mask-image: url(../img/hex-bg-white.svg);
  	-webkit-mask-size: 100% 100%;
   	mask-size: 100% 100%;
 }
@@ -130,4 +130,11 @@ blockquote {
   top: 100%;
   width: 0;
   border-top: 5.77px solid $blue;;
+}
+
+
+
+.hex-hover {
+
+
 }

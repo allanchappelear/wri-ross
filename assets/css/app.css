@@ -10681,8 +10681,8 @@ blockquote {
 }
 
 .hex-mask {
-  -webkit-mask-image: url(../img/bios/hex-mask.png);
-          mask-image: url(../img/bios/hex-mask.png);
+  -webkit-mask-image: url(../img/hex-bg-white.svg);
+          mask-image: url(../img/hex-bg-white.svg);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
@@ -11071,58 +11071,47 @@ nav .apply {
 .jury .item {
   position: relative;
   display: inline-block;
-  border-radius: 25px;
   overflow: hidden;
-  width: 190px;
-  height: 200px;
+  width: 184px;
+  height: 196px;
   margin: 0 1px 2px 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .jury .item img {
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 200px;
 }
 
-.jury .item .caption {
-  border-radius: 25px;
-  padding: 1.5em;
-  position: absolute;
-  color: white;
-  background: #0099cc;
-  top: 200px;
-  opacity: .9;
-  height: 217px;
-  width: 100%;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  font-size: .8em;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
-  background: #a1ba42;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-}
-
-.jury .item .caption h5 {
+.jury .item h5 {
   font-weight: 900;
   font-family: acumin-pro-condensed, sans-serif;
-  font-size: 1.15em;
+  font-size: 1.5em;
   line-height: 1.2em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+}
+
+.jury .item .caption {
+  position: absolute;
+  background: url(../img/hex-bg-gradient.svg) center center no-repeat;
+  width: 196px;
+  height: 198px;
+  top: 196px;
+  color: white;
+  font-size: .7em;
+  padding: 40px 30px 30px 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .jury .item:hover .caption {
-  bottom: 0;
   top: 0;
-  width: 100%;
+  width: 196px;
 }
 
-.jury .content {
+.content {
   padding: 5em;
 }
 
@@ -11161,31 +11150,22 @@ nav .apply {
   font-size: 1.2em;
   line-height: 1.1em;
   font-family: acumin-pro-condensed, sans-serif;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 #advisory_council .img-more .hover {
-  border-radius: 25px;
-  padding: 1.5em;
   position: absolute;
-  color: white;
-  background: #0099cc;
+  background: url(../img/hex-bg-gradient.svg) center center no-repeat;
+  width: 196px;
+  height: 198px;
   top: 200px;
-  opacity: .9;
-  height: 217px;
-  width: 100%;
-  font-size: .8em;
+  color: white;
+  font-size: .7em;
+  line-height: 1.3;
+  padding: 40px 30px 30px 30px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a1ba42+0,0099cc+100 */
-  background: #a1ba42;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #a1ba42 0%, #0099cc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1ba42', endColorstr='#0099cc',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
 }
 
 #advisory_council .img-more:hover .hover {
