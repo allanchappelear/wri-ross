@@ -139,3 +139,258 @@ blockquote {
 #gmap {
 	height: 65vh;
 }
+
+.infowindow {
+                max-width: 15rem;
+                min-width: 15rem;
+                position: relative;
+                padding: 15px;
+            }
+
+
+            .infowindow__close {
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                opacity: 1;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            .infowindow__close:before,
+            .infowindow__close:after {
+                content: "";
+                position: absolute;
+                top: 9px;
+                left: 2px;
+                width: 16px;
+                height: 2px;
+                background: #afaeae;
+            }
+
+            .infowindow__close:hover .infowindow__close:before,
+            .infowindow__close:hover .infowindow__close:after {
+                background: #575656;
+            }
+
+            .infowindow__close:before {
+                transform: rotate(45deg);
+            }
+
+            .infowindow__close:after {
+                webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+
+            .gm-style-iw__header,
+            .infowindow__header {
+                padding: 0 0 0 5rem;;
+                position: relative;
+            }
+
+            .gm-style-iw__header h3,
+            .infowindow__header h3 {
+                margin-bottom: 0;
+                margin-top: 0;
+                font-size: 1.6rem;
+                padding-right: 1rem;
+            }
+
+            .gm-style-iw__header p,
+            .infowindow__header p {
+                font-size: 1.2rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            .gm-style-iw__img,
+            .infowindow__img {
+                object-position: center;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                position: absolute;
+                left: 10px;
+                top: 2px;
+                object-fit: cover;
+            }
+
+            .infowindow__divider {
+                min-width: 400px;
+                height: 2px;
+                background: #565353;
+                margin: 1rem -15px 0;
+            }
+
+            .gm-style-iw__content,
+            .infowindow__content {
+                padding: 1.5rem 0 1.5rem 5rem;
+            }
+
+            .gm-style-iw__list,
+            .infowindow__list {
+                padding-left: 0;
+            }
+
+            .gm-style-iw__list li,
+            .infowindow__list li {
+                list-style: none;
+                font-size: 0.9rem;
+                line-height: 1.4;
+                position: relative;
+                font-family: $acumin;
+            }
+
+            .gm-style-iw__list li:before,
+            .infowindow__list li:before {
+                position: absolute;
+                content: '';
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: $blue;
+                left: -50px;
+                top: 0.3rem;
+            }
+
+            .gm-style-iw__sum,
+            .infowindow__sum {
+                position: absolute;
+                right: 10px;
+                top: 7px;
+                font-size: 2.2rem;
+                font-family: 'AcuminProCond-Bold';
+            }
+
+            .gm-style-iw__line,
+            .infowindow__line {
+                position: absolute;
+                width: 45.3rem;
+                left: -1.5rem;
+                top: 11rem;
+                height: 1px;
+                z-index: 9999999999;
+                background: #000;
+            }
+
+            @media (max-width: 1200px) {
+                .xprojects__sum {
+                    left: 2rem;
+                }
+            }
+
+/* The location pointed to by the popup tip. */
+
+            .popup-tip-anchor {
+                height: 0;
+                left: 0;
+                position: absolute;
+                /* The max width of the info window. */
+                width: 600px;
+            }
+
+            /* The bubble is anchored above the tip. */
+            .popup-bubble-anchor {
+                position: absolute;
+                width: 100%;
+                bottom: 20px;
+                left: 5px;
+            }
+
+            /* Draw the tip. */
+            .popup-bubble-anchor::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* Center the tip horizontally. */
+                transform: translate(-100%, 0);
+                /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+                width: 0;
+                height: 0;
+                /* The tip is 8px high, and 12px wide. */
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: /* TIP_HEIGHT= */ 8px solid white;
+            }
+
+            .popup-bubble-anchor.winner-anchor::after {
+                left: 0px;
+            }
+
+            /* The popup bubble itself. */
+            .popup-bubble-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -100%);
+                /* Style the info window. */
+                background-color: white;
+                padding: 15px 15px 0 15px;
+                border-radius: 3px;
+                font-family: sans-serif;
+                overflow-y: auto;
+                /* max-height: 60px; */
+                min-width: 400px;
+                box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+            }
+
+            .popup-bubble-content.left {
+                transform: translate(-20px, -100%);
+            }
+
+            .popup-bubble-content.right {
+                transform: translate(calc(-100% + 10px), -100%);
+            }
+
+            .popup-bubble-content.winner-popup {
+                padding: 0;
+            }
+
+            .winner-popup {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                width: 570px;
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.20);
+            }
+
+            .winner-popup__info {
+                width: 320px;
+            }
+
+            .winner-popup__header {
+                font: 37px/1 'AcuminProCond-Bold';
+            }
+
+            .winner-popup__desc {
+                font: 24px/1 'AcuminProCond-Light';
+                margin: 14px auto;
+            }
+
+            .winner-popup__place {
+                font: 16px/1 'HelveticaNeue-Light';
+            }
+
+            .winner-popup__icon {
+                margin-right: -32px;
+                z-index: 1;
+            }
+
+            .winner-popup__icon img {
+                width: 63px;
+                height: auto;
+            }
+
+            .winner-popup__image {
+                height: 223px;
+            }
+
+            .winner-popup__image img {
+                width: 223px;
+                height: 223px;
+                display: block;
+            }
